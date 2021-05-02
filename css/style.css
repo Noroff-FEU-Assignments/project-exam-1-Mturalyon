@@ -1,0 +1,37 @@
+/*GLOBALS*/
+:root {
+    --main-red-color: #C73439;
+    --dark-red-color: #7B1317;
+    --main-white-color: #F8F8F8;
+    --white-text-color: #fff;
+    --dark-text-color: #474747;
+    --footer-background: #313131;
+}
+
+/*RESET*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*NAVIGATION*/
