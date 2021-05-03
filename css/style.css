@@ -1,6 +1,6 @@
-/*FONTS
-font-family: 'Playfair Display', serif;
-font-family: 'Open Sans', sans-serif;
+/*PROTOTYPE
+https://xd.adobe.com/view/321d56d6-82c5-4fec-b3f1-2cf4489265ea-674e/
+https://xd.adobe.com/view/33a37136-20f8-41e9-974d-7c256568fbea-66f0/
 */
 
 /*GLOBALS*/
@@ -10,7 +10,9 @@ font-family: 'Open Sans', sans-serif;
     --main-white-color: #F8F8F8;
     --white-text-color: #fff;
     --dark-text-color: #474747;
-    --footer-background: #313131;
+    --footer-background: #5a0c0f;
+    --text-font: 'Open Sans', sans-serif;
+    --header-font: 'Playfair Display', serif;
 }
 
 /*RESET*/
@@ -27,7 +29,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--text-font);
     line-height: 1.5;
 }
 
@@ -139,7 +141,7 @@ footer .social-container li a {
 }
 
 footer .social-container li a:hover {
-    color: var(--main-red-color);
+    color: rgb(255, 22, 22);
 }
 
 .copy-container {
