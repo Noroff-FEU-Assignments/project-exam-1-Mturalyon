@@ -1,3 +1,8 @@
+/*FONTS
+font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
 /*GLOBALS*/
 :root {
     --main-red-color: #C73439;
@@ -35,3 +40,4 @@ a {
 }
 
 /*NAVIGATION*/
+
