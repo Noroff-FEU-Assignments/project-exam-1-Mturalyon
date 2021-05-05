@@ -21,6 +21,10 @@ https://xd.adobe.com/view/33a37136-20f8-41e9-974d-7c256568fbea-66f0/
     justify-content: center;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 /*button*/
 .btn-round {
     font-size: 1.7rem;
@@ -188,7 +192,7 @@ footer .social-container li a:hover {
 }
 
 /*---INDEX---*/
-/*header*/
+/*--header*/
 .index-header {
     background-image: linear-gradient(
         to right bottom,
@@ -205,7 +209,6 @@ footer .social-container li a:hover {
 }
 
 .index-header h1 {
-    font-size: 3rem;
     margin-top: -2rem;
     margin-bottom: 2rem;
 }
@@ -227,7 +230,7 @@ footer .social-container li a:hover {
     height: 40rem;
 }
 
-.carousel-section .small-title, .carousel-section_products .small-title {
+.small-title {
     margin-bottom: 1rem;
     font-weight: bold;
     color: var(--dark-text-color);
@@ -340,7 +343,49 @@ footer .social-container li a:hover {
     font-size: 1.7rem;
 }
 
+/*---EQUIPMENT---*/
+.equipment-header {
+    height: 94vh;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.733),
+        rgba(0, 0, 0, 0.733)),
+        url(/img/gear-hero.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-text-color);
+}
 
+.equipment-header div {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.equipment-header h1 {
+    margin-bottom: 5rem;
+}
+
+/*--main*/
+.equipment-main {
+    padding: 5rem 0 10rem 0;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.equipment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.equipment-container a {
+    margin: 0.5rem;
+}
 
 
 
