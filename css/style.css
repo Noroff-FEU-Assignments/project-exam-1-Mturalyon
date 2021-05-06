@@ -85,7 +85,7 @@ a {
 
 /*---NAVIGATION---*/
 nav {
-    background-color: var(--main-white-color);
+    background-color: rgb(252, 252, 252);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -119,6 +119,11 @@ nav {
 .nav-menu li a:hover {
     background-color: var(--main-red-color);
     color: var(--white-text-color);
+}
+
+.on-page {
+    background-color: var(--main-red-color);
+    color: var(--white-text-color) !important;
 }
 
 /*hamburger*/
@@ -248,6 +253,7 @@ footer .social-container li a:hover {
     width: 13rem;
     height: 20rem;
     overflow: hidden;
+    box-shadow: 0 5px 10px rgba(255, 32, 32, 0.432);
 }
 
 .slider, .slider_products {
@@ -385,6 +391,63 @@ footer .social-container li a:hover {
 
 .equipment-container a {
     margin: 0.5rem;
+}
+
+/*--EQUIPMENT SPECIFIC*/
+.equipment-specific-main {
+    height: 57rem;
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.equipment-specific-main hr {
+    margin-bottom: 5rem;
+    width: 100%;
+    border-top: var(--main-red-color) 0.2rem solid;
+}
+
+.equipment-info img {
+    width: 50%;
+    object-fit: cover;
+    margin-right: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+}
+
+.equipment-info {
+    display: flex;
+}
+
+.equipment-info p {
+    font-size: 1.2rem;
+    color: var(--dark-text-color);
+}
+
+.equipment-info div {
+    padding-top: 1rem;
+}
+
+/*--modal*/
+.modal-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    position: absolute;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+.modal-container img {
+    width: 35%;
+    object-fit: cover;
+    cursor: default;
+}
+
+.modal-body {
+    position: relative;
+    top: 0;
+    bottom: 0;
 }
 
 
