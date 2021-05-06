@@ -291,7 +291,7 @@ footer .social-container li a:hover {
 
 .recipe-card:hover .recipe-picture {
     height: 100%;
-    transition: 0.3s all ease-out;
+    transition: 0.3s all ease;
 }
 
 .card-info {
@@ -449,6 +449,8 @@ footer .social-container li a:hover {
     top: 0;
     bottom: 0;
 }
+
+/*---ABOUT---*/
 
 
 
