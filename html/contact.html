@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="We are passionate about drinks, however. It is expensive to enjoy cocktails in town and shouldnt be an everyday habit. Unless you want your wallet to scream? Therefore we are working towards bringing the cocktails to your home!">
+        content="Do you have any questions or issues regarding our blog site? Fill in the information and we will contact you shortly.">
     <meta name="keywords" content="Bar, Home, Cocktails, Guests, Romantic, Tasteful, Easy">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/944d42a4bf.js" crossorigin="anonymous"></script>
-    <title>HomeBar | About</title>
+    <title>HomeBar | Contact</title>
 </head>
 
 <body>
@@ -40,7 +40,43 @@
         </ul>
     </nav>
 
+    <main class="contact-main">
+        <div class="contact-container">
+            <form action="" method="GET" class="contact-form">
+                <h1>Contact Us</h1>
+                <div>
+                    <label for="name">Your Name
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                    </label>
+                    <p class="error-message" id="name-error">Please enter your name (At least 6 characters)</p>
+                </div>
 
+                <div>
+                    <label for="email">Email
+                        <input type="text" name="email" id="email" placeholder="Email Address">
+                    </label>
+                    <p class="error-message" id="email-error">Please enter a valid Email Address</p>
+                </div>
+
+                <div>
+                    <label for="subject">Subject
+                        <input type="text" name="subject" id="subject" placeholder="Your reason">
+                    </label>
+                    <p class="error-message" id="subject-error">Please enter a subject (At least 16 characters)</p>
+                </div>
+
+                <div class="last-div">
+                    <label for="message">Your Message
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Enter Text Here..."></textarea>
+                    </label>
+                    <p class="error-message" id="message-error">Message needs to be at least 26 characters</p>
+                </div>
+
+                <button class="submit-btn">SEND</button>
+            </form>
+        </div>
+    </main>
 
     <footer>
         <div class="social-container">
@@ -57,6 +93,7 @@
         </div>
     </footer>
     <script src="../js/hamburger.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 
 </html>

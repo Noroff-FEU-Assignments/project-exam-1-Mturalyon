@@ -510,6 +510,137 @@ footer .social-container li a:hover {
     margin-top: -2rem;
 }
 
+/*---CONTACT---*/
+.contact-main {
+    height: 59rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.733),
+        rgba(255, 255, 255, 0.733)),
+        url(/img/contact-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-container {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 92vh;
+}
+
+.contact-form {
+    background-color: var(--main-red-color);
+    filter: drop-shadow(0 0.5rem 0.5rem rgba(230, 3, 3, 0.459));
+    padding: 3rem 4rem 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 40rem;
+}
+
+.contact-form h1 {
+    margin-bottom: 1.7rem;
+    color: var(--white-text-color);
+}
+
+.contact-form label input, .contact-form label textarea {
+    display: block;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 0.3rem;
+    border: 2px solid transparent;
+    width: 100%;
+    font-family: "open sans", helvetica, sans-serif;
+    resize: none;
+}
+
+.contact-form label input:focus, .contact-form label textarea:focus {
+    border: 2px solid #94060b;
+    outline: none !important;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--white-text-color);
+}
+
+
+.contact-form div {
+    margin-bottom: 1.5rem;
+}
+
+.error-message {
+    display: none;
+    width: 80%;
+    background-color: rgb(255, 0, 0);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.contact-container .last-div {
+    margin-bottom: 3rem;
+}
+
+.contact-form .submit-btn, .complete-container .back-btn {
+    font-family: "open sans", helvetica, sans-serif;
+    background-color: var(--white-text-color);
+    color: var(--main-red-color);
+    border: 0.2rem solid transparent;
+    border-radius: 3rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contact-form .submit-btn:focus {
+    outline: none !important;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: var(--dark-red-color);
+    border: 0.2rem solid var(--white-text-color);
+    color: var(--white-text-color);
+    cursor: pointer;
+}
+
+.contact-form .submit-btn:disabled {
+    background-color: rgb(192, 192, 192);
+    color: white;
+    cursor: default;
+}
+
+/*
+JS INNERHTML*/
+.complete-container {
+    text-align: center;
+    color: var(--white-text-color);
+}
+.back-btn {
+    display: inline-block;
+    margin-top: 8rem;
+    width: 60%;
+}
+.back-btn:hover {
+    background-color: #48B14C;
+    color: var(--white-text-color);
+}
+
+.complete-container span {
+    margin-bottom: 2rem;
+}
+.check-a {
+    color: #48B14C !important;
+}
+.check-b {
+    color: white;
+}
+
 
 
 
