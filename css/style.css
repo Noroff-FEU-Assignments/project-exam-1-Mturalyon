@@ -296,11 +296,13 @@ footer .social-container li a:hover {
 }
 
 .card-info {
-    padding: 0.5rem 0.7rem 1rem 0.7rem;
+    padding-bottom: 1rem;
     height: 38%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card-info h3 {
@@ -697,6 +699,50 @@ JS INNERHTML*/
     margin: auto;
 }
 
+/*RECIPE-SUB-PAGES*/
+.tequila-header {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.795),
+        rgba(0, 0, 0, 0.767)),
+        url(../img/tequila-hero.jpg);
+        text-align: center;
+}
+
+.tequila-header h1 {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 8rem;
+}
+
+.tequila-header div {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.recipe-sub-main .equipment-container {
+    margin-bottom: 2rem;
+}
+
+.view-more-container {
+    display: none;
+}
+
+.view-more-btn {
+    font-weight: bold;
+    color: var(--dark-text-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.view-more-btn:hover {
+    color: var(--main-red-color);
+    text-decoration: underline;
+}
+
+.display {
+    display: block;
+}
 
 
 
