@@ -700,6 +700,8 @@ JS INNERHTML*/
 }
 
 /*RECIPE-SUB-PAGES*/
+/*tequila
+*/
 .tequila-header {
     background-image: linear-gradient(
         to right bottom,
@@ -709,15 +711,16 @@ JS INNERHTML*/
         text-align: center;
 }
 
-.tequila-header h1 {
+.tequila-header h1, .vodka-header h1, .rum-header h1 {
     padding: 0;
     margin-top: 0;
     margin-bottom: 8rem;
 }
 
-.tequila-header div {
+.tequila-header div, .vodka-header div, .rum-header div {
     font-weight: bold;
     font-size: 1.2rem;
+    padding-bottom: 5rem;
 }
 
 .recipe-sub-main .equipment-container {
@@ -742,6 +745,30 @@ JS INNERHTML*/
 
 .display {
     display: block;
+}
+
+/*Vodka
+*/
+.vodka-header {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.664),
+        rgba(0, 0, 0, 0.747)),
+        url(../img/vodka-hero.jpg);
+        text-align: center;
+}
+
+/*Rum
+*/
+.rum-header {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.822),
+        rgba(0, 0, 0, 0.842)),
+        url(../img/rum-hero.jpg);
+        text-align: center;
+        background-position: center;
+        background-size: cover;
 }
 
 
