@@ -798,6 +798,11 @@ JS INNERHTML*/
 
 /*---MEDIA QUERIES---*/
 @media only screen and (max-width: 1200px) {
+    /*---ABOUT---*/
+    .about-card {
+        width: 80%;
+    }
+
     /*---EQUIPMENT SPECIFIC---*/
     .equipment-info {
         padding: 0 0 3rem 0;
@@ -866,6 +871,12 @@ JS INNERHTML*/
         margin-bottom: 2rem;
     }
 
+    /*---ABOUT---*/
+    .about-card {
+        width: 100%;
+        box-shadow: none;
+    }
+
     /*---EQUIPMENT SPECIFIC---*/
     .equipment-info {
         flex-direction: column;
@@ -893,5 +904,33 @@ JS INNERHTML*/
         color: var(--main-red-color);
         margin-bottom: 0.5rem;
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /*---ABOUT---*/
+    .about-card {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .about-card img {
+        width: 50%;
+        margin: auto;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+    .about-card-info {
+        width: 100%;
+    }
+    .about-intro-section h1 {
+        color: var(--dark-text-color);
+        margin-bottom: 2rem;
+    }
+    
+    .about-intro-section p {
+        font-size: 0.8rem;
+    }
+    .about-intro-section {
+        padding: 0 1rem;
     }
 }
