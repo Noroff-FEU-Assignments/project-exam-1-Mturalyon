@@ -664,11 +664,11 @@ JS INNERHTML*/
 }
 
 .recipe-header h1 {
-    margin-top: 10rem;
-    padding-bottom: 10rem;
+    margin-bottom: 12rem;
 }
 
 .recipe-header ul {
+    padding-bottom: 10rem;
     display: flex;
     width: 50%;
     justify-content: space-between;
