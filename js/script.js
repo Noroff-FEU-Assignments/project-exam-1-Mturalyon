@@ -1,11 +1,3 @@
-//hamburger transformation
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-const nav = document.querySelector("nav");
-
-hamburgerMenu.addEventListener('click', () => {                             //gives the nav a class to rotate hamburger lines into an X
-    nav.classList.toggle("toggle");
-});
-
 //carousel Posts
 const leftBtn = document.querySelector(".btn-left");                        //targeting btns
 const rightBtn = document.querySelector(".btn-right");
