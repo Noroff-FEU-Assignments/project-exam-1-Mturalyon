@@ -907,6 +907,21 @@ JS INNERHTML*/
     }
 
     /*---CONTACT---*/
+    .contact-main {
+        height: 100%;
+    }
+    .contact-container {
+        padding: 0;
+        min-height: 100%;
+    }
+    .contact-form {
+        filter: none;
+        padding: 3rem 1.5rem 5rem 1.5rem;
+        min-width: 100%;
+    }
+    .contact-form h1 {
+        font-size: 2.3rem;
+    }
 }
 
 @media only screen and (max-width: 500px) {
