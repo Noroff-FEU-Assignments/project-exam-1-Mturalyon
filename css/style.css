@@ -907,16 +907,6 @@ JS INNERHTML*/
     }
 
     /*---CONTACT---*/
-    .contact-container {
-        padding: 0;
-    }
-    
-    .contact-form {
-        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-        border-radius: 0;
-        min-width: 100%;
-        min-height: 100%;
-    }
 }
 
 @media only screen and (max-width: 500px) {
