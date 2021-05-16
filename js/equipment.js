@@ -1,6 +1,6 @@
 const container = document.querySelector(".equipment-container");               //targeting the container for the games that will be loaded
 
-const url = "https://saeteraas.one/home-bar/wp-json/wp/v2/posts?_embed";        //targeting url for products
+const url = "https://saeteraas.one/home-bar/wp-json/wp/v2/posts?per_page=100&_embed";        //targeting url for products
 
 async function callApis() {                                                     //function to call API and create html
 

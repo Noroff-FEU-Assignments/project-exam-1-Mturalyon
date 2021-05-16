@@ -1,11 +1,11 @@
-const container = document.querySelector(".equipment-specific-main");                       //targeting display container
-const modalContainer = document.querySelector(".modal-container");                          //targeting the modal container
+const container = document.querySelector(".recipe-specific-main");
+const modalContainer = document.querySelector(".modal-container");
 
-const queryString = document.location.search;                                               //searching through the querystring
-const params = new URLSearchParams(queryString);                                            //searching through parameters of querystring
-const id = params.get("id");                                                                //targeting ID in parameters taking its value
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
 
-const url = "https://saeteraas.one/home-bar/wp-json/wp/v2/posts/" + id + "?per_page=100&_embed";         //targeting URL with specific ID
+const url = "https://saeteraas.one/home-bar/wp-json/wp/v2/posts/" + id + "?per_page=100&_embed";
 
 async function callApi() {
 
@@ -53,20 +53,30 @@ function createHtml(details) {                                                  
     <h1>${details.title.rendered}</h1>
         <hr>
         <div class="equipment-info">
-            <img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="a picture of the equipment">
+            <img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="an img of ${details.title.rendered}">
             <div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde quam omnis saepe voluptatibus
-                    excepturi
-                    eveniet pariatur praesentium repudiandae recusandae iusto fugit quas modi repellat eaque iste, hic
-                    laborum obcaecati qui illum atque! Aliquid, quasi. Dignissimos atque, illum provident incidunt odit
-                    consectetur repellat cupiditate nisi magni laborum enim quaerat adipisci est quam quidem veniam
-                    aspernatur ut deserunt quos quia. Iusto, sapiente autem! Suscipit cum eligendi quos minus
-                    perspiciatis
-                    quae doloremque, aut et aspernatur hic? Saepe praesentium sint dolores possimus distinctio quos.</p>
+                <div class="ingredients-container">
+                    <h2>Ingredients</h2>
+                    ${details.content.rendered}
+                </div>
+                <div>
+                    <h2>Method</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde quam omnis saepe voluptatibus
+                        excepturi
+                        eveniet pariatur praesentium repudiandae recusandae iusto fugit quas modi repellat eaque iste,
+                        hic
+                        laborum obcaecati qui illum atque! Aliquid, quasi. Dignissimos atque, illum provident incidunt
+                        odit
+                        consectetur repellat cupiditate nisi magni laborum enim quaerat adipisci est quam quidem veniam
+                        aspernatur ut deserunt quos quia. Iusto, sapiente autem! Suscipit cum eligendi quos minus
+                        perspiciatis
+                        quae doloremque, aut et aspernatur hic? Saepe praesentium sint dolores possimus distinctio quos.
+                    </p>
+                </div>
             </div>
         </div>`;                                                                            //creates html from JSON
 
-    modalContainer.innerHTML = `<img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="a modal of the equipment">`; //changing picture for modal from JSON
+    modalContainer.innerHTML = `<img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="a modal of the cocktail">`; //changing picture for modal from JSON
 
     document.title = "HomeBar | " + details.title.rendered;                                 //Altering page title
 }
