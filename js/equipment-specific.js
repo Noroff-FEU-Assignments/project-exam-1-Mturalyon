@@ -12,7 +12,7 @@ async function callApi() {
     try {
         const response = await fetch(url);                                                  //Fetching URL
         const json = await response.json();                                                 //Extract JSON from URL
-        console.log(json)
+        console.log(json);
 
         createHtml(json);                                                                   //Function where HTML is created
 
@@ -69,4 +69,4 @@ function createHtml(details) {                                                  
     modalContainer.innerHTML = `<img src="${details._embedded["wp:featuredmedia"][0].source_url}" alt="a modal of the equipment">`; //changing picture for modal from JSON
 
     document.title = "HomeBar | " + details.title.rendered;                                 //Altering page title
-}
+};

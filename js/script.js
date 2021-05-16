@@ -33,7 +33,7 @@ async function callApi() {                                                      
     }
 };
 
-callApi()
+callApi();
 
 function createHtml(json) {                                                                 //looping through the JSON adding 4 objects on each container, separating with categories
 

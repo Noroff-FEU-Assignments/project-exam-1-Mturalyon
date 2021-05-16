@@ -9,12 +9,12 @@ async function callApi() {
         const response = await fetch(url);                                              //catching JSON format through URL
         const json = await response.json();
 
-        console.log(json)
+        console.log(json);
 
         displayedContainer.innerHTML = '';
         viewMoreContainer.innerHTML = '';
 
-        createHtml(json)                                                                //a function to create HTML
+        createHtml(json);                                                                //a function to create HTML
     }
     catch (error) {                                                                     //error display
         displayedContainer.innerHTML = `
@@ -28,7 +28,7 @@ async function callApi() {
 
 };
 
-callApi()
+callApi();
 
 function createHtml(json) {
     for (let i = 0; i < 10; i++) {                                                 //looping and targeting correct category, then displaying first 10 posts on both containers

@@ -10,12 +10,12 @@ async function callApi() {
         const response = await fetch(url);                                              //catching JSON format through URL
         const json = await response.json();
 
-        console.log(json)
+        console.log(json);
         tequilaContainer.innerHTML = '';                                                //resetting all containers
         vodkaContainer.innerHTML = '';
         rumContainer.innerHTML = '';
 
-        createHtml(json)                                                                //a function to create HTML
+        createHtml(json);                                                                //a function to create HTML
     }
     catch (error) {                                                                     //error display on all containers
         tequilaContainer.innerHTML = `
@@ -43,7 +43,7 @@ async function callApi() {
 
 };
 
-callApi()
+callApi();
 
 function createHtml(json) {
 
@@ -70,7 +70,7 @@ function createHtml(json) {
                         <h3>${json[i].title.rendered}</h3>
                     </div>
                 </div>
-            </a>`
+            </a>`;
         };
         //Rum
         if (json[i].tags[0] === 6) {
@@ -82,8 +82,8 @@ function createHtml(json) {
                         <h3>${json[i].title.rendered}</h3>
                     </div>
                 </div>
-            </a>`
-        }
+            </a>`;
+        };
     };
-}
+};
 

@@ -78,7 +78,7 @@ function formValidation(event) {
                                 </div>`;//convert form to complete message
     };
 
-}
+};
 
 function checkError(value, length) {                                        //returns a true or false statement if value is greater than length
     if (value.trim().length > length) {
