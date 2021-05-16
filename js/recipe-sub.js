@@ -59,12 +59,12 @@ function createHtml(json) {
 };
 
 //VIEW MORE
-const viewMoreBtn = document.querySelector(".view-more-btn");
+const viewMoreBtn = document.querySelector(".view-more-btn"); //targeting view more btn
 
-viewMoreBtn.addEventListener('click', () => {
+viewMoreBtn.addEventListener('click', () => {                   //onlick add a class on the hidden container that has a property of display flex
     viewMoreContainer.classList.toggle("display");
 
-    if (viewMoreBtn.innerHTML === "View More") {
+    if (viewMoreBtn.innerHTML === "View More") {                //if view button has a value of View More on click it will change to View Less and vice versa
         viewMoreBtn.innerHTML = "View Less";
     } else {
         viewMoreBtn.innerHTML = "View More";
